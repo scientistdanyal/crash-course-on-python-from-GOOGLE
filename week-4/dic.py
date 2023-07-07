@@ -77,27 +77,138 @@
 
 
 
-def get_sentence(words):
-    items = ''
+# def get_sentence(words):
+#     items = ''
 
-    price = ''
-
-
-
-    itm_or_price = words.split()
+#     price = ''
 
 
-    for x in itm_or_price:
 
-        if x.isalpha():
-            items += x + " "
+#     itm_or_price = words.split()
 
-        else:
-            price = x
+
+#     for x in itm_or_price:
+
+#         if x.isalpha():
+#             items += x + " "
+
+#         else:
+#             price = x
     
 
-    items = items.strip()
+#     items = items.strip()
 
-    return '{} on a sales for ${}'.format(items,price)
+#     return '{} on a sales for ${}'.format(items,price)
                 
-print(get_sentence('White Floor 4.4'))
+# print(get_sentence('White Floor 4.4'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def get_sentence(itm_and_price):
+#     items = ""
+#     price = ''
+
+
+#     itm_or_price = itm_and_price.split()
+
+#     for x in itm_or_price:
+
+#         if x.isalpha():
+#             items += x + ' '
+
+#         else:
+#             price = x
+
+
+#     items = items.strip()
+#     return '{} on a sales for ${}'.format(items,price)
+
+
+# print(get_sentence('white floor 7.7'))
+
+    
+
+
+
+
+
+
+# def extend_two_list(recent_first,recent_last):
+
+#     recent_first.reverse()
+
+#     recent_last.extend(recent_first)
+
+#     return recent_last
+
+
+
+
+# recent_first = [2022, 2018, 2011, 2006]
+# recent_last = [1989, 1992, 1997, 2001]
+# print(extend_two_list(recent_first,recent_last))
+
+
+# def reset_score(game_scores):
+  
+#   new_game_scores = game_scores.copy()
+  
+#   for player , score in new_game_scores.items():
+    
+    
+#     new_game_scores[player] = 0
+    
+    
+    
+    
+#   return new_game_scores
+  
+  
+# print(reset_score({'Danyal':3,'Ali':7}))  
+  
+
+
+
+
+
+
+def network(servers):
+
+
+    results = ''
+
+
+    for hostname, IP_address in servers.items():
+
+
+        results += 'The IP address of the {} server is {}'.format(hostname,IP_address) + '\n'
+
+
+
+    return results
+
+print(network({"Domain Name Server":"8.8.8.8", "Gateway Server":"192.168.1.1", "Print Server":"192.168.1.33", "Mail Server":"192.168.1.190"}))
+
+  
